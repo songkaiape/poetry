@@ -4,7 +4,7 @@ $('.name-overlay .input-name').focus();
 
 $('.name-overlay .input-name').keypress(function(event) {
 	if(event.which == 13) {
-		if($('.name-overlay .input-name').val() != 'xxx') {
+		if($('.name-overlay .input-name').val() != '胖丁') {
 			$('.name-overlay .warning').css('color', 'red');
 			return;
 		}
@@ -106,7 +106,7 @@ $('.thanks').bind('webkitAnimationEnd', function() {
 });
 
 function calcDate() {
-	var date1=new Date(2016,0,1,0,0);
+	var date1=new Date(2006,9,1,0,0);
 	var date2=new Date();
 	var date3=date2.getTime()-date1.getTime();
 
