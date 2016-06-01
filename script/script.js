@@ -15,7 +15,7 @@ $('.name-overlay .input-name').keypress(function(event) {
 	}
 });
 
-$('.circle').bind('webkitAnimationEnd', function() {
+$('.circle').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 	$('.name-overlay').remove();
 	$('.screen-1').addClass('animation');
 });
